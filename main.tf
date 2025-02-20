@@ -13,7 +13,7 @@ provider "spacelift" {
 
 resource "spacelift_policy" "iam_policy_approval" {
   name = "require_security_approval_for_iam_policy1"
-  type = "APPROVE"
+  type = "PLAN"
   body = file("iam_policy_approval.rego")
 }
 
