@@ -19,6 +19,6 @@ resource "spacelift_policy" "iam_policy_approval" {
 
 # Attach policy to a specific stack
 resource "spacelift_policy_attachment" "iam_policy_attachment" {
-  stack_id  = "avinash_prompt_2"  # Replace with the actual stack ID
+  stack_id  = "avinash_prompt_3"  # Replace with the actual stack ID
   policy_id = spacelift_policy.iam_policy_approval.id
 }
